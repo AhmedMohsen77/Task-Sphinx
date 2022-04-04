@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Educational RC</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Javascript file -->
+    <script src="js/script.js" async></script>
+  </head>
+  <body>
+    <!-- Loader -->
+    <div class="loader">
+      <img src="/images/background/Preloader_2.gif" alt="loader" />
+    </div>
+    <!-- /Loader -->
+
+    <div class="container">
+      <div class="container_content">
+        <!-- Header -->
+        <header class="header">
+          <h1 class="header_title">What’s in the basket? Choose and write.</h1>
+          <div class="header_box">
+            <img
+              src="images/icons/resourse_icon.png"
+              alt="icon"
+              data-add="helper_image"
+            />
+            <img
+              src="images/icons/help_icon.png"
+              alt="icon"
+              data-add="helper_text"
+            />
+          </div>
+        </header>
+        <!-- /Header -->
+
+        <!-- Content -->
+        <div class="content questions">
+          <!-- Questions container -->
+          <div class="question_container">
+            <ul class="shooses">
+              <li class="item-shoose" data-answer="incorrect">scissors</li>
+              <li class="item-shoose" data-answer="correct">eraser</li>
+              <li class="item-shoose" data-answer="correct">ruler</li>
+              <li class="item-shoose" data-answer="incorrect">bag</li>
+              <li class="item-shoose" data-answer="incorrect">pencil case</li>
+              <li class="item-shoose" data-answer="correct">pencil</li>
+              <li class="item-shoose" data-answer="correct">book</li>
+              <li class="item-shoose" data-answer="correct">pen</li>
+            </ul>
+            <div class="answers">
+              <img
+                class="question_image"
+                src="images/background/p15e11.png"
+                alt="image"
+              />
+              <div class="answer_row">
+                <div class="answer_col">
+                  <div class="option"></div>
+                  <div class="option"></div>
+                </div>
+                <div class="answer_col">
+                  <div class="option"></div>
+                </div>
+                <div class="answer_col">
+                  <div class="option"></div>
+                  <div class="option"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Questions container -->
+
+          <!-- Helpers container -->
+          <div class="helper">
+            <!-- Button close helper -->
+            <button class="btn close_btn">
+              <img src="/images/icons/close_icon.png" alt="icon" />
+            </button>
+            <!-- /Button close helper -->
+
+            <!-- Image -->
+            <div class="image helper_container">
+              <div class="image_container">
+                <img
+                  src="/images/background/dummy.jpg"
+                  alt="background image"
+                />
+              </div>
+            </div>
+            <!-- /Image -->
+
+            <!-- Text -->
+            <div class="text helper_container">
+              <p class="text">Help content goes here.</p>
+            </div>
+            <!-- /Text -->
+          </div>
+          <!-- /Helpers container -->
+        </div>
+        <!-- /Content -->
+
+        <!-- Footer -->
+        <footer class="footer">
+          <button class="footer_btn btn replay">
+            <img src="images/icons/replay_icon.png" alt="icon" />
+          </button>
+          <button class="footer_btn btn show-ans">
+            <img src="images/icons/showAns_icon.png" alt="icon" />
+          </button>
+        </footer>
+        <!-- /Footer -->
+      </div>
+    </div>
+  </body>
+</html>
