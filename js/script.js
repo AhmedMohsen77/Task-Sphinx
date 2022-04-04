@@ -31,20 +31,22 @@ const resizeObserver = new ResizeObserver((entries) => {
 
     const entrieCR = entrie.contentRect; // Container dimenions
 
+    // Height
     const scaleHeight = entrieCR.height / containerContentBCR.height;
 
+    // Width
     const widthContainerContent = containerContentBCR.width * scaleHeight; // Width container content
     const widthContainer = entrieCR.width;
-
     const scaleWidth = widthContainer / widthContainerContent;
 
-    const moveLeft = (widthContainer - widthContainerContent) / 2;
+    // Move Content to center
+    const moveContentCenter = (widthContainer - widthContainerContent) / 2;
 
     containerContent.style.transform = `scale(${
       scaleHeight < scaleWidth ? scaleHeight : scaleWidth
     })`;
 
-    containerContent.style.left = `${moveLeft > 0 ? moveLeft : 0}px`;
+    containerContent.style.left = `${moveContentCenter > 0 ? moveContentCenter : 0}px`;
   });
 });
 
@@ -129,6 +131,7 @@ options.forEach((option) => {
             showAnsBtn.classList.add("disabled");
           }
         } else {
+          // check if data answer is incorrect
           const html = `<div class="answer">
                         <span>${item.textContent}</span>
                         <img src="images/icons/crossMark-small.png" alt="icon" />
